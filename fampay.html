@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionhome">
+        <div class="container home-bg-container p-4 ">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <h1>fam pay</h1>
+                        <P>payment in seconds</P>
+                    </div>
+                </div>
+                <div class="col-12 d-flex flex-column justify-content-center">
+                    <div class="box-container mb-4 pb-4 pt-4 ml-5" onclick="display('sectionTeenager')">
+                        <img src="https://thumbs.dreamstime.com/z/teenage-boy-rejoices-victory-teaching-programming-children-s-education-diploma-vector-illustration-isolated-white-226843376.jpg" class="image" />
+                        <h1 class="box-paragraph">Teenager</h1>
+                    </div>
+                    <div class="box-container mb-4 pb-4 pt-4 ml-5" onclick="display('sectionStore')">
+                        <img src="https://www.shutterstock.com/image-vector/store-icon-600w-283964192.jpg" class="image" />
+                        <h1 class="box-paragraph">Store</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionTeenager">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-details">
+                    <h1>Register and login</h1>
+                    <form id="myForm">
+                        <div class="mb-3">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" />
+                            <p id="nameErrMsg" class="error-message"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" />
+                            <p id="emailErrMsg" class="error-message"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phonenumber">phone number</label>
+                            <input type="text" class="form-control" id="phonenumber" />
+                            <p id="phonenumberErrMsg" class="error-message"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="gender-field-heading">Gender</h1>
+                            <input type="radio" name="gender" id="genderMale" value="Male" checked />
+                            <label for="genderMale">Male</label>
+                            <input type="radio" name="gender" id="genderFemale" value="Female" class="ml-2" />
+                            <label for="genderFemale">Female</label>
+                        </div>
+                        <button class="btn btn-primary" id="TenagerSubmitbutton">Submit</button>
+                    </form>
+                    <div class="d-flex flex-row justify-content-center">
+                        <button class="button" onclick="display('sectionhome')">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionStore">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-details">
+                    <form id="myForm2">
+                        <div class="col-12">
+                            <h1>Register and login</h1>
+                        </div>
+                        <div class="mb-3">
+                            <label for="name2">Name</label>
+                            <input type="text" class="form-control" id="name2" />
+                            <p id="nameErrMsg2" class="error-message"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email2">Email</label>
+                            <input type="text" class="form-control" id="email2" />
+                            <p id="emailErrMsg2" class="error-message"></p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phonenumber2">phone number</label>
+                            <input type="text" class="form-control" id="phonenumber2" />
+                            <p id="phonenumberErrMsg2" class="error-message"></p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="gender-field-heading">Gender</h1>
+                            <input type="radio" name="gender2" id="genderMale2" value="Male" checked />
+                            <label for="genderMale2">Male</label>
+                            <input type="radio" name="gender2" id="genderFemale2" value="Female" class="ml-2" />
+                            <label for="genderFemale2">Female</label>
+                        </div>
+                        <button class="btn btn-primary" id="storeSubmitbutton">Submit</button>
+                    </form>
+                    <div class="d-flex flex-row justify-content-center">
+                        <button class="button" onclick="display('sectionhome')">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionBalance">
+        <div class="container  main-bg-container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Account Balance</p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4v1.06Z" />
+                        </svg>0
+                    </p>
+                </div>
+                <div class="col-6 pay-box d-flex flex-row justify-content-end">
+                    <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                        </svg>pay</button>
+                </div>
+                <div class="col-6 add-box d-flex flex-row ml-auto">
+                    <button class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>add</button>
+                </div>
+                <div class="col-12 mt-3" onclick="display('sectionSearch')">
+                    <button class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                            <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+                        </svg> <br />add to store</button>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-warning m-3" onclick="display('sectionTeenager')">Back</button>
+                    <button class="btn btn-warning m-3" onclick="display('sectionhome')">Go to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionSearch">
+        <div class="container search-bg-container">
+            <div class="row">
+                <div class="col-12 adding-to-store">
+                    <button class="btn btn-warning">Add Money to store</button>
+                </div>
+                <div class="col-12">
+                    <h1 class="search-heading">Search for store</h1>
+                    <input placeholder="TYPE ID OF THE STORE" type="search" id="searchInput" class="search-input w-100" />
+                </div>
+                <div class="d-none" id="spinner">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 search-results" id="searchResults"></div>
+                <div class="col-4 checkbox-container" id="searchResultscheckingstatus"></div>
+                <div class="col-12">
+                    <button class="btn btn-warning m-3" onclick="display('sectionBalance')">Back</button>
+                    <button class="btn btn-warning m-3" onclick="display('sectionhome')">Go to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionStoreHistory">
+        <div class="container store-main-container">
+            <div class="row">
+                <div class="col-12 p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="30" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                    </svg>
+                    <h1 class="m">STORE ID:</h1>
+                </div>
+                <div class="col-12">
+                    <h1 class="mb-3 mt-5">YOUR USERS</h1>
+                    <h1>Debited History</h1>
+                </div>
+                <div class="col-12 d-flex flex-row justify-content-center">
+                    <button class="btn btn-warning m-3" onclick="display('sectionStore')">Back</button>
+                    <button class="btn btn-warning m-3" onclick="display('sectionhome')">Go to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
