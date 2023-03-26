@@ -1,0 +1,145 @@
+.home-bg-container {
+    background-color: #225db0;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.box-container {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.image {
+    height: 70px;
+    margin-top: 10px;
+}
+
+.box-paragraph {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.section-details {
+    background-color: #225db0;
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+.button {
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    background-color: #225db0;
+}
+
+.error-message {
+    color: #dc3545;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.gender-field-heading {
+    color: #212529;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main-bg-container {
+    background-color: #0a0706;
+    color: white;
+    background-size: cover;
+    height: 100vh;
+    padding: 40px;
+    text-align: center;
+}
+
+.pay-box {}
+
+.add-box {}
+
+.search-input {
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5cdcd;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.search-bg-container {
+    background-color: white;
+    background-size: cover;
+    height: 100vh;
+}
+
+.search-input {
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5cdcd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search-results {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.result-item {
+    margin-bottom: 20px;
+}
+
+.result-title {
+    font-size: 22px;
+}
+
+.result-status {
+    color: #444444;
+    font-size: 15px;
+}
+
+.result-name {
+    color: #006621;
+    text-decoration: none;
+}
+
+.search-heading {
+    font-size: 20px;
+}
+
+.adding-to-store {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkboxstyle {
+    height: 20px;
+    width: 100px;
+}
+
+.checkbox-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.store-main-container {
+    background-color: #30302e;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
